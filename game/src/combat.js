@@ -37,6 +37,8 @@ export function createCombat(random) {
       game.stats.kills += 1;
       game.heat += 45;
       game.peds.scare(p.x, p.y, 320);
+      // A victim drops a little cash: the city pays for its own trouble.
+      spawnPickup(best.obj.x, best.obj.y, 'cash', 10);
       events.hitPed = best.obj;
     } else if (best.kind === 'cop') {
       best.obj.dead = true;

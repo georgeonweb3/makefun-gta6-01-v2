@@ -77,6 +77,11 @@ export function createCity(random) {
     }
   }
 
+  // A row of palms along the beach road, so the south edge reads as a coast.
+  for (let x = 100; x < WORLD.size - 60; x += 130) {
+    trees.push({ x: x + random.range(-20, 20), y: WORLD.beachY - 42, r: random.range(9, 13) });
+  }
+
   // Landmark labels for the map.
   labels.push({ x: 1200, y: 1200, text: 'NEON STRIP' });
   labels.push({ x: 450, y: 450, text: 'OLD PORT' });

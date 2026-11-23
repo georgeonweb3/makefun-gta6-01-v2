@@ -30,8 +30,8 @@ export const CAR = {
   health: 100,
 };
 
-export const TRAFFIC = { count: 22, speedMin: 110, speedMax: 185, respawnDist: 900 };
-export const PEDS = { count: 34, speedMin: 28, speedMax: 62 };
+export const TRAFFIC = { count: 24, speedMin: 110, speedMax: 185, respawnDist: 900 };
+export const PEDS = { count: 36, speedMin: 28, speedMax: 62 };
 
 export const WANTED = {
   // heat points that each star needs; heat decays when the law loses sight of you

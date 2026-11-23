@@ -1,5 +1,7 @@
 // A small seeded random generator (mulberry32) plus the helpers the game uses,
 // so a seed always builds the same city, the same traffic and the same shots.
+// mulberry32 is tiny, fast and good enough for placement: two seeds never
+// share a city, and one seed always rebuilds the same one.
 export function createRandom(seed) {
   let a = seed >>> 0;
   return {
